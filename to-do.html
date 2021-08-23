@@ -44,39 +44,30 @@
       <div class="col-md-6">
         <hr>
         <h2>Add a Place:</h2>
-        <form id="new-place">
+        <form id="new-item">
           <div class="form-group">
-            <label for="new-country">Country</label>
-            <input type="text"  class="form-control" id="new-country" required>
+            <label for="new-title">What to do:</label>
+            <input type="text"  class="form-control" id="new-title" required>
           </div>
-          <div class="form-group">
-            <label for="new-city">City</label>
-            <input type="text"  class="form-control" id="new-city" required>
-          </div>
-          <div class="form-group">
-            <label for="new-landmark">Landmark</label>
-            <input type="text"  class="form-control" id="new-landmark" placeholder="i.e. Grand Canyon" required>
-          </div>
-          <div class="form-group">
-            <label for="new-rating">Rating</label>
-            <input type="number"  class="form-control" id="new-rating" required>
-          </div>
+          <!-- <div class="form-group">
+            <label for="new-finished">Finished?</label>
+            <input type="number"  class="form-control" id="new-finished" required>
+          </div> -->
           <button type="submit" class="btn-primary">Add</button>
         </form>
         <hr>
         <h2>Places:</h2>
-        <ul id="places">
+        <ul id="items">
         </ul>
       </div>
       <div class="col-md-6">
-        <div id="show-place">
-          <p>Country: <span class="city-name"></span></p>
-          <p>City: <span class="country-name"></span></p>
-          <p>Landmark: <span class="landmark"></span></p>
-          <p>Rating: <span class="rating"></span></p>
+        <div id="show-item">
+          <p>Country: <span class="title-name"></span></p>
+          <p>Completed? <span class="finished"></span></p>
           <div id="buttons">
           </div>
         </div>
+        <p>Completed: <span id="finished-item"></span></p>
       </div>
     </div>
   </div>
