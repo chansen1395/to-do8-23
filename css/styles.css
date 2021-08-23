@@ -1,3 +1,10 @@
 #show-item {
   display: none;
 }
+
+.complete {
+  background-color:green;
+  color: white;
+  padding:20px;
+  font-size: 25px;
+}

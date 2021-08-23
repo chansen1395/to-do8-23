@@ -58,9 +58,11 @@ function attachItemListeners() {
     displayItemDetails(logToDo);
   });
   $("#buttons").on("click", ".completeButton", function() {
+    $("#finished-item").show()
     let finished = $("#finished-item")
     finished.append(logToDo.item);
-    $("#show-item").hide();
+    // $("#show-item").hide();
+    logToDo.items.add("complete");
     displayItemDetails(logToDo);
   });
 }
